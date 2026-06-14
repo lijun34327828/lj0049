@@ -1,0 +1,12 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_PORT: string;
+  readonly VITE_APP_MODE: string;
+  readonly VITE_IS_PREVIEW: string;
+  readonly VITE_WS_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
